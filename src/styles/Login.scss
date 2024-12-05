@@ -1,0 +1,110 @@
+.Login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  // gap: 80px;
+
+  .Logo {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    img {
+      max-width: 90%;
+      margin-bottom: 120px;
+    }
+  }
+
+  .input {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    // background-color: #b62323;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    .content {
+      // text-align: center;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #213f7d;
+      }
+
+      h5 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color: #545f7d;
+        padding-bottom: 20px;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          width: 95%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+        }
+
+        button {
+          padding: 10px;
+          font-size: 1rem;
+          color: #fff;
+          background-color: #3b82f6;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #2563eb;
+          }
+        }
+      }
+
+      h2 {
+        margin-top: 10px;
+        color: #3b82f6;
+        font-size: 15px;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .password-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        input {
+          flex: 1;
+          padding-right: 50px; // Space for the "Show" button
+        }
+
+        .toggle {
+          position: absolute;
+          right: 10px;
+          top: 20%; // Vertically centers the element
+          transform: translateY(-50%); // Adjusts to the middle
+          cursor: pointer;
+          font-size: 1rem;
+          color: #3b82f6;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+// .dashboard {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 1rem;
+
+//     .dashboard-header {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         background-color: #f9f9f9;
+//         padding: 1rem;
+//         border-bottom: 1px solid #e5e5e5;
+
+//         .logo {
+//             img {
+//                 height: 40px;
+//             }
+//         }
+
+//         .search-bar {
+//             display: flex;
+//             align-items: center;
+//             flex: 1;
+//             margin: 0 2rem;
+
+//             input {
+//                 flex: 1;
+//                 padding: 0.5rem;
+//                 border: 1px solid #ccc;
+//                 border-radius: 4px;
+//             }
+
+//             .search-icon {
+//                 background: none;
+//                 border: none;
+//                 margin-left: -39px;
+//                 font-size: 1rem;
+//                 cursor: pointer;
+//                 color: #888;
+//                 background-color: #39CDCC;
+//                 padding: 6px;
+//                 width: 40px;
+
+//                 &:hover {
+//                     color: #000;
+//                 }
+//             }
+//         }
+
+//         .header-right {
+//             display: flex;
+//             align-items: center;
+//             gap: 1rem;
+
+//             .docs-link {
+//                 font-size: 1rem;
+//                 color: #3b82f6;
+//                 cursor: pointer;
+
+//                 &:hover {
+//                     text-decoration: underline;
+//                 }
+//             }
+
+//             .notification {
+//                 img {
+//                     height: 24px;
+//                     cursor: pointer;
+//                 }
+//             }
+
+//             .profile {
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 0.5rem;
+
+//                 .profile-pic {
+//                     height: 32px;
+//                     width: 32px;
+//                     border-radius: 50%;
+//                 }
+
+//                 .profile-name {
+//                     font-size: 1rem;
+//                     font-weight: 600;
+//                 }
+
+//                 .dropdown-icon {
+//                     font-size: 1.2rem;
+//                     color: #888;
+//                     cursor: pointer;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.app {
+    display: flex;
+
+    .main-content {
+        flex: 1;
+        padding: 2rem;
+        background-color: #f8f9fa;
+    }
+}

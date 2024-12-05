@@ -1,0 +1,169 @@
+.user-table {
+  margin-top: 2rem;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+
+  h3 {
+    padding-left: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      font-size: 14px;
+      /* Adjust the size as needed */
+    }
+
+    .status {
+      &.inactive {
+        color: #272729;
+      }
+
+      &.pending {
+        color: orange;
+      }
+
+      &.active {
+        color: green;
+      }
+    }
+  }
+
+  .status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: capitalize;
+  }
+
+  .status.inactive {
+    background-color: #545f7d;
+    color: #545f7d;
+  }
+
+  .status.pending {
+    background-color: rgb(253, 247, 229);
+    color: #fff;
+  }
+
+  .status.blacklisted {
+    background-color: rgb(252, 230, 235);
+    color: #e4033b;
+  }
+
+  .status.active {
+    background-color: rgb(243, 252, 246);
+    color: #fff;
+  }
+
+  .imgs {
+    padding-left: 10px;
+  }
+
+  .dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .organization{
+    width: 130px;
+  }
+  .dropdown-actions {
+    padding-top: 10px;
+      display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    .apply {
+      background-color: #39cdcc;
+      border: none;
+      padding: 10px; /* Standardized padding */
+      border-radius: 10px;
+      width: 60px; /* Set a fixed width (example size) */
+      height: 40px; /* Set a fixed height (example size) */
+      box-sizing: border-box; 
+      justify-self: start;/* Ensures padding is included in the width and height */
+    }
+
+    .reset {
+      background-color: white;
+      border: 2px solid #545f7d;
+      border-radius: 10px;
+      padding: 10px; /* Standardized padding */
+      width: 60px; /* Match the width of .apply */
+      height: 40px; /* Match the height of .apply */
+      box-sizing: border-box;
+      justify-self: end; /* Ensures padding + border fits within the width and height */
+    }
+  }
+
+ .dropdown-menu {  
+    position: absolute;  
+    background-color: white;  
+    border: 1px solid #ddd;  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);  
+    padding: 8px 0;  
+    z-index: 100;  
+    min-width: 150px; /* Ensures the dropdown has some width */  
+    left: 93%; /* Center the dropdown */  
+    transform: translateX(-50%); /* Shift it back by half its width */  
+    margin-top: 5px; 
+}
+
+.dropdown-menu .img{
+    padding-right: 10px;
+}
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.search-bar{
+  position: absolute;
+  top: 55px;
+
+  input {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.2s; /* Optional: Adds a smooth transition effect */
+    }
+
+    input:focus {
+      outline: none; /* Removes the default focus outline */
+      border-color: transparent; /* Focus border color */
+      box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5); /* Adds a custom focus ring */
+    }
+
+    .search-icon {
+      // margin-left: 0.5rem;
+      background-color: #39cdcc;
+      padding: 0.5rem;
+      //   border-right: 1px solid #000; /* Adjust color and width as needed */
+      border-radius: 0 5px 5px 0;
+      position: absolute;
+      //   right: 505px;'
+      margin-left: -2px;
+      cursor: pointer;
+      color: white;
+    }
+}
+}

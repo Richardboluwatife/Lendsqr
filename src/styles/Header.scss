@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+
+    input {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.2s; /* Optional: Adds a smooth transition effect */
+    }
+
+    input:focus {
+      outline: none; /* Removes the default focus outline */
+      border-color: #ccc; /* Focus border color */
+      box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5); /* Adds a custom focus ring */
+    }
+
+    .search-icon {
+      // margin-left: 0.5rem;
+      background-color: #39cdcc;
+      padding: 0.5rem;
+      //   border-right: 1px solid #000; /* Adjust color and width as needed */
+      border-radius: 0 5px 5px 0;
+      position: absolute;
+      //   right: 505px;'
+      margin-left: 185px;
+      color: white;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 20px;
+    color: #213f7d;
+    justify-self: end;
+
+    .bell-icon {
+      height: 30px;
+    }
+
+    .profile img {
+      height: 30px;
+      border-radius: 20px;
+    }
+  }
+}
