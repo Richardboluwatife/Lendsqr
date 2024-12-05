@@ -16,7 +16,7 @@ const Pagination: React.FC<PaginationProps> = ({
     onPageChange,
 }) => {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
-    const maxPageNumbersToShow = 6;
+    // const maxPageNumbersToShow = 6;
 
     // Function to determine the page numbers to display
     const getPageNumbers = () => {

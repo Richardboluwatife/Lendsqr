@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 const statuses = ["Inactive", "Pending", "Blacklisted", "Active"];
 
 interface User {
+    id: string;
     organization: string;
     username: string;
     email: string;
@@ -22,11 +23,8 @@ interface User {
     status: string;
 }
 
-interface UserTableProps {
-    searchQuery: string;
-}
 
-const UserTable: React.FC<UserTableProps> = () => {
+const UserTable: React.FC = () => {
     const [users, setUsers] = useState<User[]>([]);
     const [filteredUsers, setFilteredUsers] = useState<User[]>([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -180,7 +178,7 @@ const UserTable: React.FC<UserTableProps> = () => {
     }, [searchQuery, users]);
 
     const totalItems = filteredUsers.length;
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    // const totalPages = Math.ceil(totalItems / itemsPerPage);
     const displayedUsers = filteredUsers.slice(
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
