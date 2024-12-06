@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa";
 import '../../../styles/Details.scss'
 import Star from '../../../assets/star.png'
 import Star1 from '../../../assets/star1.png'
