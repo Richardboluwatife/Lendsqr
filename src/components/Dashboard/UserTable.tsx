@@ -283,7 +283,7 @@ const UserTable: React.FC = () => {
                                                 Reset
                                             </button>
                                             <button onClick={applyFilters} className="apply">
-                                                Apply
+                                                Filter
                                             </button>
                                         </div>
                                     </div>

@@ -4,12 +4,11 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  // gap: 80px;
+  padding: 20px; // Add padding for smaller screens
 
   .Logo {
     display: flex;
     flex-direction: column;
-    // align-items: center;
 
     img {
       max-width: 90%;
@@ -21,13 +20,9 @@
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    // background-color: #b62323;
-    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 
     .content {
-      // text-align: center;
-
       h1 {
         font-size: 2rem;
         margin-bottom: 10px;
@@ -46,7 +41,7 @@
         flex-direction: column;
 
         input {
-          width: 95%;
+          width: 100%; // Ensure inputs take full width
           padding: 10px;
           margin-bottom: 15px;
           border: 1px solid #ccc;
@@ -94,8 +89,8 @@
         .toggle {
           position: absolute;
           right: 10px;
-          top: 20%; // Vertically centers the element
-          transform: translateY(-50%); // Adjusts to the middle
+          top: 20%; // Center vertically
+          transform: translateY(-50%);
           cursor: pointer;
           font-size: 1rem;
           color: #3b82f6;
@@ -105,6 +100,65 @@
           }
         }
       }
+    }
+  }
+
+  // Media Queries for Mobile
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack items vertically
+    padding: 10px;
+
+    .Logo {
+      align-items: center;
+      margin-bottom: 20px;
+
+      img {
+        max-width: 70%; // Reduce image size on smaller screens
+        margin-bottom: 50px;
+      }
+    }
+
+    .input {
+      max-width: 90%; // Reduce input container width
+      padding: 15px;
+
+      .content {
+        h1 {
+          font-size: 1.5rem; // Reduce heading size
+        }
+
+        h5 {
+          font-size: 0.9rem; // Adjust subtitle size
+        }
+
+        .form {
+          input {
+            font-size: 0.9rem; // Adjust input text size
+          }
+
+          button {
+            font-size: 0.9rem; // Adjust button text size
+          }
+        }
+
+        h2 {
+          font-size: 14px; // Adjust link text size
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .Logo img {
+      max-width: 60%; // Further reduce image size for very small screens
+    }
+
+    .input .content h1 {
+      font-size: 1.25rem; // Further reduce heading size
+    }
+
+    .input .content h5 {
+      font-size: 0.8rem; // Adjust subtitle size further
     }
   }
 }
